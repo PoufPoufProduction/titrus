@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="48px"
+   height="48px"
+   id="svg2383"
+   sodipodi:version="0.32"
+   inkscape:version="0.46"
+   sodipodi:docname="icon.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape">
+  <defs
+     id="defs2385">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 24 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="48 : 24 : 1"
+       inkscape:persp3d-origin="24 : 16 : 1"
+       id="perspective2391" />
+    <inkscape:perspective
+       id="perspective3269"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.3484492"
+     inkscape:cx="32.971741"
+     inkscape:cy="25.79518"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     inkscape:grid-bbox="true"
+     inkscape:document-units="px"
+     inkscape:window-width="1092"
+     inkscape:window-height="670"
+     inkscape:window-x="0"
+     inkscape:window-y="259" />
+  <metadata
+     id="metadata2388">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer">
+    <rect
+       style="opacity:1;fill:#3e1812;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:5;stroke-linecap:round;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect2393"
+       width="48"
+       height="48"
+       x="0"
+       y="0"
+       rx="6"
+       ry="6" />
+    <path
+       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="M 6.1284792,9.3660276 L 5.3557078,22.612773 L 4.58099,35.892886 L 17.458292,36.644105 L 30.368032,37.397217 L 43.27777,38.150328 L 44.097412,24.100136 L 31.187674,23.347024 L 19.204568,22.647969 L 19.932415,10.171304 L 6.1284792,9.3660276 z"
+       id="rect3347"
+       sodipodi:nodetypes="ccccccccccc" />
+    <path
+       style="opacity:1;fill:#ffff97;fill-opacity:0.07727273;fill-rule:evenodd;stroke:none;stroke-width:5;stroke-linecap:round;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="M 6 0 C 2.676 0 8.4138425e-18 2.676 0 6 L 0 10.875 C 3.7321595 15.665072 13.357526 19.0625 24.65625 19.0625 C 34.802874 19.0625 43.605513 16.311877 48 12.28125 L 48 6 C 48 2.676 45.324 8.4138425e-18 42 0 L 6 0 z "
+       id="path3438" />
+    <g
+       id="g3315"
+       transform="matrix(0.9983027,5.8237682e-2,-5.8237682e-2,0.9983027,3.9339078,4.1482996)">
+      <g
+         transform="matrix(0.2589286,0,0,0.2589286,3.2235554,18.357142)"
+         id="g3272">
+        <rect
+           width="48"
+           height="48"
+           x="0"
+           y="0"
+           id="r2409"
+           style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+        <rect
+           width="46"
+           height="46"
+           x="1"
+           y="1"
+           id="r2411"
+           style="fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+        <path
+           d="M 1,47 L 24,24 L 47,47 L 1,47 z"
+           id="p2413"
+           style="fill:#9b0021;fill-opacity:1;fill-rule:evenodd;stroke:none" />
+        <path
+           d="M 1,1 L 24,24 L 47,1 L 1,1 z"
+           id="p3185"
+           style="fill:#ff6c5f;fill-opacity:1;fill-rule:evenodd;stroke:none" />
+        <path
+           d="M 0,0 L 0,48 L 48,48 L 48,0 L 0,0 z M 2,2 L 46,2 L 46,46 L 2,46 L 2,2 z"
+           id="r3189"
+           style="fill:#000000;fill-opacity:0.5;fill-rule:evenodd;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      </g>
+      <g
+         transform="matrix(0.2589286,0,0,0.2589286,15.643163,18.357142)"
+         id="g3279">
+        <rect
+           width="48"
+           height="48"
+           x="0"
+           y="0"
+           id="rect3281"
+           style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+        <rect
+           width="46"
+           height="46"
+           x="1"
+           y="1"
+           id="rect3283"
+           style="fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+        <path
+           d="M 1,47 L 24,24 L 47,47 L 1,47 z"
+           id="path3285"
+           style="fill:#9b0021;fill-opacity:1;fill-rule:evenodd;stroke:none" />
+        <path
+           d="M 1,1 L 24,24 L 47,1 L 1,1 z"
+           id="path3287"
+           style="fill:#ff6c5f;fill-opacity:1;fill-rule:evenodd;stroke:none" />
+        <path
+           d="M 0,0 L 0,48 L 48,48 L 48,0 L 0,0 z M 2,2 L 46,2 L 46,46 L 2,46 L 2,2 z"
+           id="path3289"
+           style="fill:#000000;fill-opacity:0.5;fill-rule:evenodd;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      </g>
+      <g
+         transform="matrix(0.2589286,0,0,0.2589286,28.078785,18.357142)"
+         id="g3291">
+        <rect
+           width="48"
+           height="48"
+           x="0"
+           y="0"
+           id="rect3293"
+           style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+        <rect
+           width="46"
+           height="46"
+           x="1"
+           y="1"
+           id="rect3295"
+           style="fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+        <path
+           d="M 1,47 L 24,24 L 47,47 L 1,47 z"
+           id="path3297"
+           style="fill:#9b0021;fill-opacity:1;fill-rule:evenodd;stroke:none" />
+        <path
+           d="M 1,1 L 24,24 L 47,1 L 1,1 z"
+           id="path3299"
+           style="fill:#ff6c5f;fill-opacity:1;fill-rule:evenodd;stroke:none" />
+        <path
+           d="M 0,0 L 0,48 L 48,48 L 48,0 L 0,0 z M 2,2 L 46,2 L 46,46 L 2,46 L 2,2 z"
+           id="path3301"
+           style="fill:#000000;fill-opacity:0.5;fill-rule:evenodd;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      </g>
+      <g
+         transform="matrix(0.2589286,0,0,0.2589286,3.2235554,5.9345227)"
+         id="g3303">
+        <rect
+           width="48"
+           height="48"
+           x="0"
+           y="0"
+           id="rect3305"
+           style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+        <rect
+           width="46"
+           height="46"
+           x="1"
+           y="1"
+           id="rect3307"
+           style="fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+        <path
+           d="M 1,47 L 24,24 L 47,47 L 1,47 z"
+           id="path3309"
+           style="fill:#9b0021;fill-opacity:1;fill-rule:evenodd;stroke:none" />
+        <path
+           d="M 1,1 L 24,24 L 47,1 L 1,1 z"
+           id="path3311"
+           style="fill:#ff6c5f;fill-opacity:1;fill-rule:evenodd;stroke:none" />
+        <path
+           d="M 0,0 L 0,48 L 48,48 L 48,0 L 0,0 z M 2,2 L 46,2 L 46,46 L 2,46 L 2,2 z"
+           id="path3313"
+           style="fill:#000000;fill-opacity:0.5;fill-rule:evenodd;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      </g>
+    </g>
+  </g>
+</svg>
