@@ -50,6 +50,7 @@ const std::string Game::bgs[]   = { "t_bg00", "t_bg01", "t_bg02", "t_bg05" };
  */
 bool Game::init(splashouille::Engine * _engine)
 {
+    char    msg[10];
     // GET THE INTERACTIVE OBJECT
     o_score[0]  = _engine->getLibrary()->getObjectById("score0");
     o_score[1]  = _engine->getLibrary()->getObjectById("score1");
@@ -72,11 +73,57 @@ bool Game::init(splashouille::Engine * _engine)
     a_bg        = _engine->getLibrary()->getAnimationById("gridbg");
     a_cinematic = _engine->getLibrary()->getAnimationById("cinematic");
 
-    for (int i=0; i<10; i++) for (int j=0; j<18; j++)   { o_tiles[i][j] = 0; }
+    for (int i=0; i<10; i++) for (int j=0; j<18; j++)
+    {
+        o_tiles[i][j] = 0;
+
+        snprintf(msg, 10, "b%03d", (j*10)+i);
+        o_borders[i][j] = _engine->getLibrary()->getObjectById(msg);
+    }
     for (int i=0; i<4; i++)                             { o_active[i] = 0; o_preview[i] = 0; }
 
     return true;
 }
+
+/**
+ * Update the grid borders
+ */
+void Game::updateBorders()
+{
+    const int       n[] = { -1, 0, 0, -1, 1, 0, 0, 1, -1, 1, -1, -1, 1, -1, 1, 1 };
+    int             nb;
+    int             nx, ny;
+    int             v;
+    for (int i=0; i<10; i++) for (int j=0; j<18; j++) if (o_tiles[i][j]) { o_borders[i][j]->setTileIndex(0); } else
+    {
+        // LOOK FOR THE ADJACENT NEIGHBOORS
+        nb = v = 0;
+        for (int k=0; k<4; k++)
+        {
+            nx = i + n[k*2]; ny = j + n[k*2+1];
+            if ( (nx<0)||(nx>=10)||(ny<0)||(ny>=18)||(o_tiles[nx][ny])) { nb++; v|=(1<<k); }
+        }
+
+        // LOOK FOR THE DIAGONAL NEIGHBOORS
+        if (nb==0)
+        {
+            v = 0;
+            for (int k =0; k<4; k++)
+            {
+                nx = i+n[k*2+8]; ny = j+n[k*2+9];
+                if ( (nx>=0)&&(nx<10)&&(ny>=0)&&(ny<18)&&(o_tiles[nx][ny])) { v|=(1<<k); }
+            }
+            v +=16;
+        }
+        else
+        {
+        // TO DO
+        }
+
+        o_borders[i][j]->setTileIndex(v);
+    }
+}
+
 
 /**
  * Update the background
@@ -293,6 +340,7 @@ void Game::onLevel9(int _frame UNUSED, int _timeStampInMilliSeconds)
     for (int j=0; j<4; j++) { linesToDelete[j] = -1; }
 
     checkGrid();
+    updateBorders();
 
     // IS TYPE-B GAME FINISHED ?
     if (titrus->getGameType() && !lines)    { finish(); }
@@ -462,6 +510,10 @@ void Game::onLevel8(int _frame UNUSED, int _timeStampInMilliSeconds)
 void Game::next(int _timeStampInMilliSeconds)
 {
     bool isFinished = false;
+
+    // Update the borders
+    updateBorders();
+
     // Copy the preview to the grid as the current o_active
     if (o_preview[0])
     {
@@ -560,7 +612,6 @@ void Game::init()
     orderId = 0;
 
     updateBg(0, 0, titrus->getGameType(), currentSpeed);
-
     next();
 }
 

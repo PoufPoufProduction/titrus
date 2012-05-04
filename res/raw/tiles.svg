@@ -15,7 +15,10 @@
    inkscape:version="0.46"
    version="1.0"
    sodipodi:docname="tiles.svg"
-   inkscape:output_extension="org.inkscape.output.svg.inkscape">
+   inkscape:output_extension="org.inkscape.output.svg.inkscape"
+   inkscape:export-filename="/home/jcharlot/workspace/apps/titrus/res/img/tiles.png"
+   inkscape:export-xdpi="60"
+   inkscape:export-ydpi="60">
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -26,16 +29,16 @@
      objecttolerance="10"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.69871518"
-     inkscape:cx="49.057361"
-     inkscape:cy="167.15841"
+     inkscape:zoom="4"
+     inkscape:cx="130.77483"
+     inkscape:cy="280.49157"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:window-width="964"
      inkscape:window-height="670"
-     inkscape:window-x="135"
-     inkscape:window-y="115" />
+     inkscape:window-x="81"
+     inkscape:window-y="125" />
   <defs
      id="defs4">
     <inkscape:perspective
@@ -315,7 +318,7 @@
     <path
        d="M 49,49 L 56,56 L 88,56 L 95,49 L 49,49 z"
        id="path2829"
-       style="fill:#78fbfb;fill-opacity:1;fill-rule:evenodd;stroke:none;opacity:1;color:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+       style="opacity:1;fill:#78fbfb;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
     <path
        d="M 49,95 L 56,88 L 88,88 L 95,95 L 49,95 z"
        id="path2831"
@@ -348,7 +351,7 @@
     <path
        d="M 49,97 L 56,104 L 88,104 L 95,97 L 49,97 z"
        id="path2843"
-       style="fill:#7df873;fill-opacity:1;fill-rule:evenodd;stroke:none;opacity:1;color:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+       style="opacity:1;fill:#7df873;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
     <path
        d="M 49,143 L 56,136 L 88,136 L 95,143 L 49,143 z"
        id="path2845"
@@ -377,15 +380,15 @@
        x="49"
        y="145"
        id="rect2897"
-       style="fill:#ff9100;fill-opacity:1;fill-rule:evenodd;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;opacity:1;color:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+       style="opacity:1;fill:#ff9100;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
     <path
        d="M 49,145 L 56,152 L 88,152 L 95,145 L 49,145 z"
        id="path2899"
-       style="fill:#ffba5f;fill-opacity:1;fill-rule:evenodd;stroke:none;opacity:1;color:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+       style="opacity:1;fill:#ffba5f;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
     <path
        d="M 49,191 L 56,184 L 88,184 L 95,191 L 49,191 z"
        id="path2901"
-       style="fill:#9b5700;fill-opacity:1;fill-rule:evenodd;stroke:none;opacity:1;color:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+       style="opacity:1;fill:#9b5700;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
     <path
        d="M 48,144 L 48,192 L 96,192 L 96,144 L 48,144 z M 50,146 L 94,146 L 94,190 L 50,190 L 50,146 z"
        id="path2903"
@@ -488,7 +491,7 @@
     <path
        d="M 49,289 L 56,296 L 88,296 L 95,289 L 49,289 z"
        id="path2941"
-       style="fill:#fbfb59;fill-opacity:1;fill-rule:evenodd;stroke:none;opacity:1;color:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+       style="opacity:1;fill:#fbfb59;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
     <path
        d="M 49,335 L 56,328 L 88,328 L 95,335 L 49,335 z"
        id="path2943"

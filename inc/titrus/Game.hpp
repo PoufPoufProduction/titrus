@@ -18,7 +18,6 @@ TITRUS.  If not, see http://www.gnu.org/licenses/
 #ifndef TITRUS_GAME_HPP_
 #define TITRUS_GAME_HPP_
 
-
 #define LG_MAX_ORDER      1024
 
 namespace splashouille
@@ -46,6 +45,7 @@ private:
     splashouille::Object *      o_score[4];                 // The score value
     splashouille::Object *      o_lines[3];                 // The number of lines
     splashouille::Object *      o_tiles[10][18];            // The tiles grid
+    splashouille::Object *      o_borders[10][18];          // The borders grid
     splashouille::Object *      o_preview[4];               // The preview tiles
     splashouille::Object *      o_active[4];                // The interactive falling tiles
     splashouille::Object *      o_popup[3];                 // The popup (double, triple and titrus)
@@ -67,10 +67,7 @@ private:
     int                         tileIndex;
     int                         nextDown;
 
-    /** Update the score and the number of lines values */
     void                        updateScoreNLines(int _score, int _lines);
-
-
     void                        next(int _timeStampInMilliSeconds = 0);
     bool                        move(int _x, int _y, bool _force = false);
     void                        rotate(bool _clock = true);
@@ -78,8 +75,8 @@ private:
     void                        stopTile(int _timeStampInMilliSeconds);
     void                        updateBg(int _lastNbLines, int _newNbLines, bool _gameType, int _speed);
     void                        finish();
-
-    void checkGrid();
+    void                        checkGrid();
+    void                        updateBorders();
 
 
 public:

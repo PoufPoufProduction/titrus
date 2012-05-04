@@ -147,6 +147,7 @@ void Menu::updateOption(int _option, int _value, int _timeStampInMilliSeconds UN
         {
             titrus->getKeyboard().SDL_EnableKeyRepeat(touch[t]*2, touch[t]);
             splashouille::Sound::changeVolume((float)a/4);
+            titrus->getEngine()->getLibrary()->getObjectById("menusignes")->changeFashion(a?"sound":"nosound");
 
             o_touch[t]->changeFashion("selected");
             o_audio[a]->changeFashion("selected");

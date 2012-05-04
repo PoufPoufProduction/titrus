@@ -165,17 +165,21 @@ void Titrus::run()
     rc = rc && engine->import(configuration);
     delete configuration;
 
-    // INITIALIZE THE DIFFERENT COMPONENTS OF TITRUS
-    menu.init(engine);
-    game.init(engine);
-    score.init(engine);
-    score.update(settings.getRoot());
+    if (rc)
+    {
 
-    //engine->setDebug(true);
-    //engine->setFPS(100);
-    engine->addListener(this);
+        // INITIALIZE THE DIFFERENT COMPONENTS OF TITRUS
+        menu.init(engine);
+        game.init(engine);
+        score.init(engine);
+        score.update(settings.getRoot());
 
-    if (rc) { engine->run(screen); }
+        //engine->setDebug(true);
+        //engine->setFPS(100);
+        engine->addListener(this);
+
+        engine->run(screen);
+    }
 
     // DELETE THE ENGINE
     splashouille::Engine::deleteEngine(engine);
