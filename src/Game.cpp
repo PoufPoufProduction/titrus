@@ -41,8 +41,8 @@ const int Game::blocks[] =   {  21, 11, 12, 13, 11, 12, 22, 32, 12, 22, 21, 20, 
                                 10, 11, 12, 22, 2,  12, 22, 21, 23, 22, 21, 11, 31, 21, 11, 12
                               };
 
-const std::string Game::bgs[]   = { "t_bg00", "t_bg01", "t_bg02", "t_bg05" };
-#define nbBackgrounds  4
+const std::string Game::bgs[]   = { "t_bg00", "t_bg01", "t_bg02", "t_bgex", "t_bg05", "t_bgex", "t_bgex", "t_bgex", "t_bgex", "t_bgex" };
+#define nbBackgrounds  10
 
 /**
  * Initialize the game handler
@@ -541,10 +541,9 @@ void Game::next(int _timeStampInMilliSeconds)
         {
             char tileId[128];
             snprintf(tileId, 128, "tile%d", tileIndex++);
-            char tileName[128];
-            snprintf(tileName, 128, "_tile%d", (newTileId+1));
 
-            o_preview[i] = titrus->getEngine()->getLibrary()->copyObject(tileName, tileId);
+            o_preview[i] = titrus->getEngine()->getLibrary()->copyObject("_tile", tileId);
+            o_preview[i]->getStyle()->setPositionY(32*newTileId);
             o_preview[i]->getStyle()->setRelativeLeft(32*(blocks[i+newTileId*16]%10));
             o_preview[i]->getStyle()->setRelativeTop(32*(blocks[i+newTileId*16]/10));
             o_preview[i]->changeFashion("preview");
@@ -595,9 +594,8 @@ void Game::init()
         {
             char tileId[128];
             snprintf(tileId, 128, "tile%d", tileIndex++);
-            char tileName[32];
-            snprintf(tileName, 32, "_tile%d", (rand()%7)+1);
-            splashouille::Object * object = titrus->getEngine()->getLibrary()->copyObject(tileName, tileId);
+            splashouille::Object * object = titrus->getEngine()->getLibrary()->copyObject("_tile", tileId);
+            object->getStyle()->setPositionY(32*(rand()%7));
             object->getStyle()->setTop(j*32);
             object->getStyle()->setLeft(i*32);
             object->changeFashion("static");

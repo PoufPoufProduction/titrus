@@ -44,7 +44,6 @@ private:
     splashouille::Object *      o_options[2];               // The options
     splashouille::Object *      o_audio[5];                 // The audio values
     splashouille::Object *      o_touch[5];                 // The touch values
-    splashouille::Animation *   a_menu;                     // The menu panel
 
     int                         level1;                     // The selected level1 menu
     int                         option;                     // The selected options

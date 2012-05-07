@@ -76,8 +76,6 @@ bool Menu::init(splashouille::Engine * _engine)
     o_touch[3]      = _engine->getLibrary()->getObjectById("touch3");
     o_touch[4]      = _engine->getLibrary()->getObjectById("touch4");
 
-    a_menu          = _engine->getLibrary()->getAnimationById("a_menu");
-
     touch[0]        = 0;
     touch[1]        = 120;
     touch[2]        = 100;
@@ -214,11 +212,11 @@ void Menu::onLevel1(int _frame UNUSED, int _timeStampInMilliSeconds UNUSED)
     {
         switch(level1)
         {
-            case 0:     a_menu->changeTimeline("t_level1ToLevel2"); break;
+            case 0:     titrus->getEngine()->changeTimeline("t_level1ToLevel2"); break;
             case 1:     titrus->getScore().openOverview(); break;
-            case 3:     a_menu->changeTimeline("t_level1ToLevel14"); break;
-            case 4:     a_menu->changeTimeline("t_level1ToCredits"); break;
-            case 5:     a_menu->changeTimeline("t_level1ToEnd");break;
+            case 3:     titrus->getEngine()->changeTimeline("t_level1ToLevel14"); break;
+            case 4:     titrus->getEngine()->changeTimeline("t_level1ToCredits"); break;
+            case 5:     titrus->getEngine()->changeTimeline("t_level1ToEnd");break;
             default:    break;
         };
     }
@@ -245,8 +243,8 @@ void Menu::onLevel2(int _frame UNUSED, int _timeStampInMilliSeconds UNUSED)
 {
     Uint8 *keystates = titrus->getKeyboard().SDL_GetKeyState(NULL);
 
-    if( keystates[SDLK_ESCAPE])     { a_menu->changeTimeline("t_level2ToLevel1"); }
-    else if( keystates[' '])        { a_menu->changeTimeline("t_level2ToLevel3"); }
+    if( keystates[SDLK_ESCAPE])     { titrus->getEngine()->changeTimeline("t_level2ToLevel1"); }
+    else if( keystates[' '])        { titrus->getEngine()->changeTimeline("t_level2ToLevel3"); }
     else
     {
         int value = titrus->getGameType();
@@ -266,8 +264,8 @@ void Menu::onLevel3(int _frame UNUSED, int _timeStampInMilliSeconds UNUSED)
 {
     Uint8 *keystates = titrus->getKeyboard().SDL_GetKeyState(NULL);
 
-    if( keystates[SDLK_ESCAPE])     { a_menu->changeTimeline("t_level3ToLevel2"); }
-    else if( keystates[' '])        { a_menu->changeTimeline(titrus->getGameType()?"t_level3ToLevel4":"t_toLevel5"); }
+    if( keystates[SDLK_ESCAPE])     { titrus->getEngine()->changeTimeline("t_level3ToLevel2"); }
+    else if( keystates[' '])        { titrus->getEngine()->changeTimeline(titrus->getGameType()?"t_level3ToLevel4":"t_toLevel5"); }
     else
     {
         int value = titrus->getSpeed();
@@ -290,8 +288,8 @@ void Menu::onLevel4(int _frame UNUSED, int _timeStampInMilliSeconds UNUSED)
 {
     Uint8 *keystates = titrus->getKeyboard().SDL_GetKeyState(NULL);
 
-    if( keystates[SDLK_ESCAPE])         { a_menu->changeTimeline("t_level4ToLevel3"); }
-    else if( keystates[' '])            { a_menu->changeTimeline("t_toLevel5"); }
+    if( keystates[SDLK_ESCAPE])         { titrus->getEngine()->changeTimeline("t_level4ToLevel3"); }
+    else if( keystates[' '])            { titrus->getEngine()->changeTimeline("t_toLevel5"); }
     else
     {
         int value = titrus->getHigh();
@@ -313,8 +311,8 @@ void Menu::onLevel5(int _frame UNUSED, int _timeStampInMilliSeconds UNUSED)
 {
     Uint8 *keystates = titrus->getKeyboard().SDL_GetKeyState(NULL);
 
-    if( keystates[SDLK_ESCAPE])         { a_menu->changeTimeline(titrus->getGameType()?"t_level5ToLevel4":"t_level5ToLevel3"); }
-    else if( keystates[' '])            { titrus->getGame().init(); a_menu->changeTimeline("t_level5toGame"); }
+    if( keystates[SDLK_ESCAPE])         { titrus->getEngine()->changeTimeline(titrus->getGameType()?"t_level5ToLevel4":"t_level5ToLevel3"); }
+    else if( keystates[' '])            { titrus->getGame().init(); titrus->getEngine()->changeTimeline("t_level5toGame"); }
 }
 
 /**
@@ -327,7 +325,7 @@ void Menu::onLevel13(int _frame UNUSED, int _timeStampInMilliSeconds UNUSED)
 {
     Uint8 *keystates = titrus->getKeyboard().SDL_GetKeyState(NULL);
 
-    if( keystates[SDLK_ESCAPE] || keystates[' ']) { a_menu->changeTimeline("t_creditsToLevel1"); }
+    if( keystates[SDLK_ESCAPE] || keystates[' ']) { titrus->getEngine()->changeTimeline("t_creditsToLevel1"); }
 }
 
 /**
@@ -340,7 +338,7 @@ void Menu::onLevel14(int _frame UNUSED, int _timeStampInMilliSeconds UNUSED)
 {
     Uint8 *keystates = titrus->getKeyboard().SDL_GetKeyState(NULL);
 
-    if( keystates[SDLK_ESCAPE] || keystates[' ']) { a_menu->changeTimeline("t_Level14ToLevel1"); }
+    if( keystates[SDLK_ESCAPE] || keystates[' ']) { titrus->getEngine()->changeTimeline("t_Level14ToLevel1"); }
     else
     {
         int value = option;
