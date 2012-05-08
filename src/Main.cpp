@@ -175,7 +175,7 @@ void Titrus::run()
         score.update(settings.getRoot());
 
         //engine->setDebug(true);
-        //engine->setFPS(100);
+        engine->setFPS(60);
         engine->addListener(this);
 
         engine->run(screen);
